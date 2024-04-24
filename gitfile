@@ -18,8 +18,8 @@ url: 'https://github.com/yadhu870/jenkins-test.git'
  }
  stage("deploy to tomcat"){
      steps{
-         sshagent(['ad41e07e-900a-4778-b639-40616aaca8df']) {
-     sh 'scp -o StrictHostKeyChecking=no target/webapp.war root@3.90.40.105:/opt/tomcat/webapps/'
+         sshagent(['1833aaeb-4e0d-4009-b5b8-efad9ec151d8']) {
+     sh 'scp -o StrictHostKeyChecking=no target/webapp.war root52.24.156.223:/opt/tomcat/webapps/'
 }
      }
  }
