@@ -6,8 +6,7 @@ pipeline {
  stages {
  stage('Git Clone') {
  steps {
- git branch: 'master', credentialsId: 'GitHub-Credentials',
-url: 'https://github.com/yadhu870/jenkins-test.git'
+ git 'https://github.com/yadhu870/jenkins-test.git'
  }
  }
 
